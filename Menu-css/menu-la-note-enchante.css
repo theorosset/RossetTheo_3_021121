@@ -49,11 +49,17 @@ p {
 
 /*-------banniere-----*/
 .banniere {
-  height: 242px;
+  max-height: 512px;
   width: 100%;
   object-fit: cover;
 }
 
+/*-------banniere responsive----*/
+@media screen and (max-width: 768px) {
+  .banniere {
+    height: 260px;
+  }
+}
 /*-----menu------*/
 .menu {
   position: relative;
@@ -220,6 +226,36 @@ p {
   transform: rotate(0);
 }
 
+.titre-section1::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: #99e2d0;
+  position: absolute;
+  left: 17px;
+  bottom: 1048px;
+}
+
+.titre-section2::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: #99e2d0;
+  position: absolute;
+  left: 17px;
+  bottom: 680px;
+}
+
+.titre-section3::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: #99e2d0;
+  position: absolute;
+  left: 17px;
+  bottom: 388px;
+}
+
 /*-------plat-------*/
 .plat {
   margin-top: 35px;
@@ -280,6 +316,47 @@ p {
   padding-top: 5px;
   margin-left: 20px;
   padding-bottom: 10px;
+}
+
+/*------------apparition-anim---------*/
+.apparition1 {
+  animation: delay 1s;
+}
+
+.apparition2 {
+  animation: delay 2s;
+}
+
+.apparition3 {
+  animation: delay 3s;
+}
+
+.apparition4 {
+  animation: delay 4s;
+}
+
+.apparition5 {
+  animation: delay 5s;
+}
+
+.apparition6 {
+  animation: delay 6s;
+}
+
+.apparition7 {
+  animation: delay 7s;
+}
+
+.apparition8 {
+  animation: delay 8s;
+}
+
+.apparition9 {
+  animation: delay 9s;
+}
+
+.apparition10 {
+  animation: delay 10s;
 }
 
 /*# sourceMappingURL=menu-la-note-enchante.css.map */
