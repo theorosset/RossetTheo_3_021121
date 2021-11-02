@@ -1,3 +1,44 @@
+/*--------paramettre grosse partie-----*/
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
 
+/*--------header-------*/
+.head {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  position: sticky;
+  box-shadow: 0px 1px 10px -1px rgba(0, 0, 0, 0.25);
+}
+
+.head-logo {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  width: 196px;
+  height: 70px;
+}
+
+.retours {
+  font-size: 18px;
+  color: black;
+}
+
+.icon-retours {
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: -23px;
+}
+
+/*-------banniere-----*/
+.banniere {
+  max-height: 512px;
+  width: 100%;
+  object-fit: cover;
+}
 
 /*# sourceMappingURL=menu-a-lafrancaise.css.map */
