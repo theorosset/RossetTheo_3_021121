@@ -1,10 +1,10 @@
 /*--------taille page/police-----*/
 body {
   margin: 0px;
-}
-
-body {
   font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
 }
 /*--------header-------*/
 .head {
@@ -137,4 +137,186 @@ $color-tertiaire: #99e2d0;
 .titre-fonctionnement {
   font-size: 28px;
   margin-bottom: 20px;
+}
+/*---------responsive fonctionement----*/
+@media screen and (min-width: 768px) {
+  .fonctionnement-total {
+    flex-direction: row;
+  }
+  .fonctionnement-onglet {
+    width: 29%;
+  }
+}
+/*----------carte-restaurant--------*/
+.restaurant {
+  background-color: #f2f2f2;
+  width: 100%;
+}
+
+.restaurant-total {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.restaurant-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 325px;
+  border-bottom: 2px solid white;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.restaurant-box2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 325px;
+  border-bottom: 2px solid white;
+  background: white;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.restaurant-box-x2 {
+  width: 93%;
+}
+
+.restaurant-box2-x2 {
+  width: 93%;
+}
+
+.taille-image {
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  height: 260px;
+  object-fit: cover;
+}
+
+.restaurant-nom {
+  margin-left: 13px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: black;
+}
+
+.restaurant-situer {
+  margin-left: 13px;
+  margin-top: -1px;
+  margin-bottom: 5px;
+  color: black;
+}
+
+/*-------coeur restaurant--------*/
+.coeurcheck {
+  display: flex;
+  justify-content: end;
+  margin-top: -36px;
+  font-size: 22px;
+  margin-right: 23px;
+  cursor: pointer;
+}
+.coeurcheck input[type="checkbox"],
+.coeurcheck .check {
+  display: none;
+}
+
+.coeurcheck input[type="checkbox"]:checked ~ .check {
+  display: inline-block;
+  color: rgb(255, 255, 255, 0);
+}
+
+.coeurcheck input[type="checkbox"]:checked ~ .uncheck {
+  display: none;
+}
+
+.fas {
+  background: linear-gradient(to bottom, $color-primaire, $color-secondaire);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.uncheck:hover {
+  transition-duration: 0.6s;
+  transform: scale(1.2);
+}
+/*----fin coeur restaurant-----*/
+
+.titre-restaurant {
+  margin-left: 30px;
+  padding-top: 50px;
+  font-size: 28px;
+}
+
+.restaurant-taille {
+  margin: auto;
+}
+
+.nouveau {
+  display: flex;
+  position: absolute;
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-right: 12px;
+  padding-left: 12px;
+  top: 15px;
+  right: 13px;
+  border-radius: 3px;
+}
+/*-------responsive restaurant-----*/
+@media screen and (min-width: 768px) {
+  .restaurant-taille {
+    max-width: 1450px;
+  }
+  .restaurant-box-x2 {
+    width: 40%;
+  }
+
+  .restaurant-box2-x2 {
+    width: 40%;
+  }
+}
+/*-----------footer---------*/
+
+#footer-titre {
+  font-family: "Shrikhand", sans-serif;
+  color: white;
+  margin-bottom: 14px;
+  margin-top: 13px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footer {
+  background-color: #353535;
+  &-lien {
+    color: white;
+    margin-bottom: 8px;
+  }
+  &-total {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    margin-left: 20px;
+    padding-bottom: 10px;
+  }
+}
+
+.footer-icon {
+  padding-right: 14px;
+  font-size: 13px;
+}
+
+.footer-icon2 {
+  padding-right: 10px;
+  font-size: 12px;
 }
