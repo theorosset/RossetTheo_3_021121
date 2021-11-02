@@ -222,12 +222,64 @@ p {
 
 /*-------plat-------*/
 .plat {
-  margin-top: 10px;
+  margin-top: 35px;
 }
 
 /*-------desserts-------*/
 .dessert {
-  margin-top: 10px;
+  margin-top: 35px;
+}
+
+/*-----bouton-commander------*/
+.commander {
+  border-radius: 30px;
+  border: 0px;
+  font-size: 17px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 43px;
+  padding-left: 43px;
+  margin-top: 30px;
+  color: white;
+  background-image: linear-gradient(175deg, #ff79da, #9356dc);
+  cursor: pointer;
+}
+.commander:hover {
+  opacity: 0.4;
+  transition-duration: 0.7s;
+}
+
+.bouton-commander {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 67px;
+}
+
+/*------footer---------*/
+#footer-titre {
+  font-family: "Shrikhand", sans-serif;
+  color: white;
+  margin-bottom: 14px;
+  margin-top: 13px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footer {
+  background-color: #353535;
+}
+
+.footer-lien {
+  color: white;
+  margin-bottom: 8px;
+}
+
+.footer-total {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+  margin-left: 20px;
+  padding-bottom: 10px;
 }
 
 /*# sourceMappingURL=menu-la-note-enchante.css.map */
