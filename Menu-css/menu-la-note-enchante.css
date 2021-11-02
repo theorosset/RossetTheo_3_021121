@@ -220,4 +220,14 @@ p {
   transform: rotate(0);
 }
 
+/*-------plat-------*/
+.plat {
+  margin-top: 10px;
+}
+
+/*-------desserts-------*/
+.dessert {
+  margin-top: 10px;
+}
+
 /*# sourceMappingURL=menu-la-note-enchante.css.map */
