@@ -19,7 +19,6 @@ a {
 .head-logo {
   display: flex;
   text-align: center;
-  width: 196px;
   height: 80px;
 }
 /*-------recherche restaurant------*/
@@ -34,7 +33,18 @@ a {
     padding-right: 10px;
   }
 }
-
+.restaurant-paragraphe {
+  font-weight: 500;
+  color: #504d4d;
+  font-size: 18px;
+}
+.icon-localisation {
+  color: #504d4d;
+  display: flex;
+  position: relative;
+  left: -11px;
+  top: -2px;
+}
 /*--------exploration des reseration-------*/
 $color-primaire: #9356dc;
 $color-secondaire: #ff79da;
@@ -51,7 +61,9 @@ $color-tertiaire: #99e2d0;
   }
   &-texte {
     margin: 15px;
-    font-weight: 300;
+    font-weight: 350;
+    font-size: 18px;
+    color: #6f6969;
   }
 }
 
@@ -63,7 +75,8 @@ $color-tertiaire: #99e2d0;
   padding-bottom: 13px;
   padding-right: 18px;
   padding-left: 18px;
-  margin-top: 10px;
+  box-shadow: -4px 9px 15px -10px rgba(0, 0, 0, 0.72);
+  margin-top: 12px;
   color: white;
   background-image: linear-gradient(175deg, $color-secondaire, $color-primaire);
   cursor: pointer;
@@ -132,6 +145,10 @@ $color-tertiaire: #99e2d0;
   background-color: rgba(147, 86, 220, 0.2);
   cursor: default;
   border: 2px solid rgba(146, 86, 220, 0);
+  .icon-fonctionnement {
+    color: $color-primaire;
+    transition-duration: 00.6s;
+  }
 }
 
 .titre-fonctionnement {
@@ -250,7 +267,7 @@ $color-tertiaire: #99e2d0;
 /*----fin coeur restaurant-----*/
 
 .titre-restaurant {
-  margin-left: 30px;
+  margin-left: 15px;
   padding-top: 50px;
   font-size: 28px;
 }
