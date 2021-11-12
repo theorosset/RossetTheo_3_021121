@@ -1,16 +1,4 @@
 @charset "UTF-8";
-/*-----variable----------*/
-/*------mixin headeur----*/
-/*-------mixin-menu------*/
-/*--------entrée-------*/
-/*-----bouton-commander------*/
-/*------footer---------*/
-/*-----variable----------*/
-/*------mixin headeur----*/
-/*-------mixin-menu------*/
-/*--------entrée-------*/
-/*-----bouton-commander------*/
-/*------footer---------*/
 /*--------paramettre grosse partie-----*/
 body {
   margin: 0px;
@@ -79,17 +67,17 @@ a {
   margin-right: 20px;
 }
 
-.coeurcheck input[type=checkbox],
+.coeurcheck input[type="checkbox"],
 .coeurcheck .check {
   display: none;
 }
 
-.coeurcheck input[type=checkbox]:checked ~ .check {
+.coeurcheck input[type="checkbox"]:checked ~ .check {
   display: inline-block;
   color: rgba(255, 255, 255, 0);
 }
 
-.coeurcheck input[type=checkbox]:checked ~ .uncheck {
+.coeurcheck input[type="checkbox"]:checked ~ .uncheck {
   display: none;
 }
 
@@ -257,17 +245,14 @@ a {
   transform: rotate(0);
 }
 
-/*-------plat-------*/
 .plat {
   margin-top: 10px;
 }
 
-/*-------desserts-------*/
 .dessert {
   margin-top: 10px;
 }
 
-/*-----bouton-commander------*/
 .commander {
   border-radius: 30px;
   border: 0px;

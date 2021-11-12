@@ -1,8 +1,7 @@
-/*-----variable----------*/
 $color-primaire: #9356dc;
 $color-secondaire: #ff79da;
 $color-tertiaire: #99e2d0;
-/*------mixin headeur----*/
+
 @mixin head {
   display: flex;
   justify-content: center;
@@ -32,8 +31,6 @@ $color-tertiaire: #99e2d0;
   right: -23px;
 }
 
-/*-------mixin-menu------*/
-
 @mixin menu {
   position: relative;
   border: 2px solid #f2f2f2;
@@ -55,7 +52,7 @@ $color-tertiaire: #99e2d0;
 @mixin head-menu-titre {
   padding-left: 19px;
 }
-/*--------entrée-------*/
+
 @mixin titre-section {
   content: "";
   width: 40px;
@@ -144,7 +141,6 @@ $color-tertiaire: #99e2d0;
   margin-top: 4px;
   font-size: 13px;
 }
-/*-----bouton-commander------*/
 
 @mixin commander {
   border-radius: 30px;
@@ -169,7 +165,6 @@ $color-tertiaire: #99e2d0;
   justify-content: center;
   padding-bottom: 67px;
 }
-/*------footer---------*/
 
 @mixin footer-titre {
   font-family: "Shrikhand", sans-serif;

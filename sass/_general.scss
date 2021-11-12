@@ -160,18 +160,14 @@ a {
     transform: rotate(0);
   }
 }
-/*-------plat-------*/
 
 .plat {
   margin-top: 10px;
 }
 
-/*-------desserts-------*/
-
 .dessert {
   margin-top: 10px;
 }
-/*-----bouton-commander------*/
 
 .commander {
   @include commander;
