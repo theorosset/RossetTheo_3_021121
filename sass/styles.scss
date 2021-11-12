@@ -234,12 +234,11 @@ $color-tertiaire: #99e2d0;
 
 /*-------coeur restaurant--------*/
 .coeurcheck {
-  display: flex;
-  justify-content: end;
   margin-top: -36px;
   font-size: 22px;
   margin-right: 23px;
   cursor: pointer;
+  margin-left: auto;
 }
 .coeurcheck input[type="checkbox"],
 .coeurcheck .check {

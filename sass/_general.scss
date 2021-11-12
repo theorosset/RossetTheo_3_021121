@@ -1,0 +1,279 @@
+@import "_var-mix.scss";
+/*--------paramettre grosse partie-----*/
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-family: "Shrikhand", sans-serif;
+}
+p {
+  font-weight: 300;
+}
+
+.entree-plat-dessert {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+/*-------headeur----*/
+.head {
+  @include head;
+}
+
+.head-logo {
+  @include head-logo;
+}
+
+.retours {
+  @include retours;
+}
+
+.icon-retours {
+  @include icon-retours;
+}
+/*-------banniere-----*/
+.banniere {
+  max-height: 512px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*-------coeur restaurant--------*/
+
+.coeurcheck {
+  display: flex;
+  font-size: 24px;
+
+  cursor: pointer;
+  margin-right: 20px;
+}
+.coeurcheck input[type="checkbox"],
+.coeurcheck .check {
+  display: none;
+}
+
+.coeurcheck input[type="checkbox"]:checked ~ .check {
+  display: inline-block;
+  color: rgb(255, 255, 255, 0);
+}
+
+.coeurcheck input[type="checkbox"]:checked ~ .uncheck {
+  display: none;
+}
+
+.fas {
+  background: linear-gradient(to bottom, $color-primaire, $color-secondaire);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.uncheck:hover {
+  transition-duration: 0.6s;
+  transform: scale(1.2);
+}
+/*----fin coeur restaurant-----*/
+/*-----menu------*/
+
+.menu {
+  @include menu;
+}
+
+.head-menu {
+  @include head-menu;
+}
+
+.head-menu-titre {
+  @include head-menu-titre;
+}
+
+/*--------entrée-------*/
+.titre-section {
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-left: 16px;
+  margin-bottom: 19px;
+}
+
+.titre-section1::after {
+  @include titre-section;
+  left: 17px;
+  bottom: 961px;
+}
+
+.titre-section2::after {
+  @include titre-section;
+  left: 17px;
+  bottom: 665px;
+}
+
+.titre-section3::after {
+  @include titre-section;
+  left: 17px;
+  bottom: 368px;
+}
+
+.choix-box {
+  @include choix-box;
+}
+
+.titre-plat {
+  @include titre-plat;
+}
+
+.ingredient {
+  @include ingredient;
+}
+
+.prix {
+  @include prix;
+}
+
+.titreETingredient {
+  @include titreETingredient;
+}
+
+.confirmation {
+  @include confirmation;
+}
+
+.logo-confirmation {
+  @include logo-confirmation;
+}
+
+.icon-centre {
+  @include icon-centre;
+}
+
+.choix-box:hover {
+  .confirmation {
+    transition-duration: 0.6s;
+    margin-right: -1px;
+  }
+  .logo-confirmation {
+    transition-duration: 0.7s;
+    transform: rotate(0);
+  }
+}
+/*-------plat-------*/
+
+.plat {
+  margin-top: 10px;
+}
+
+/*-------desserts-------*/
+
+.dessert {
+  margin-top: 10px;
+}
+/*-----bouton-commander------*/
+
+.commander {
+  @include commander;
+}
+
+.bouton-commander {
+  @include bouton-commander;
+}
+
+/*------footer---------*/
+
+#footer-titre {
+  @include footer-titre;
+}
+
+.footer {
+  @include footer;
+}
+
+.footer-lien {
+  @include footer-lien;
+}
+
+.footer-total {
+  @include footer-total;
+}
+/*---------animation apparition------*/
+@keyframes delay {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.apparition1 {
+  animation: delay 1s;
+}
+
+.apparition2 {
+  animation: delay 2s;
+}
+
+.apparition3 {
+  animation: delay 3s;
+}
+
+.apparition4 {
+  animation: delay 4s;
+}
+
+.apparition5 {
+  animation: delay 5s;
+}
+
+.apparition6 {
+  animation: delay 6s;
+}
+
+.apparition7 {
+  animation: delay 7s;
+}
+
+.apparition8 {
+  animation: delay 8s;
+}
+
+.apparition9 {
+  animation: delay 9s;
+}
+.apparition10 {
+  animation: delay 9s;
+}
+
+/*----------juste pour note enchante-------*/
+
+.titre-section-enchante-1::after {
+  @include titre-section;
+  left: 17px;
+  bottom: 1039px;
+}
+.titre-section-enchante-2::after {
+  @include titre-section;
+  left: 17px;
+  bottom: 664px;
+}
+.titre-section-enchante-3::after {
+  @include titre-section;
+  left: 17px;
+  bottom: 367px;
+}
+.banniere-note-enchante {
+  max-height: 512px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*-------banniere responsive----*/
+@media screen and (max-width: 768px) {
+  .banniere-note-enchante {
+    height: 260px;
+  }
+}
