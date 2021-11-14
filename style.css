@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*--------taille page/police-----*/
 body {
   margin: 0px;
@@ -8,11 +9,84 @@ a {
   text-decoration: none;
 }
 
+/*-----loader-----*/
+@keyframes loader {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes visibilité {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+  }
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+  cursor: wait;
+  font-family: "Shrikhand", sans-serif;
+  animation: visibilité 3.9s;
+  visibility: hidden;
+  background-color: black;
+}
+
+.lettre {
+  font-size: 35px;
+  margin-left: 5px;
+  background-image: linear-gradient(25deg, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.delay1 {
+  animation: loader 1s;
+}
+
+.delay2 {
+  animation: loader 1.4s;
+}
+
+.delay3 {
+  animation: loader 1.8s;
+}
+
+.delay4 {
+  animation: loader 2.2s;
+}
+
+.delay5 {
+  animation: loader 2.6s;
+}
+
+.delay6 {
+  animation: loader 3s;
+}
+
+.delay7 {
+  animation: loader 3.4s;
+}
+
+.delay8 {
+  animation: loader 3.8s;
+}
+
 /*--------header-------*/
 .head {
   display: flex;
   justify-content: center;
-  height: 80px;
+  height: 70px;
   position: sticky;
   box-shadow: 0px 1px 10px -1px rgba(0, 0, 0, 0.25);
   z-index: 999;
@@ -21,8 +95,10 @@ a {
 .head-logo {
   display: flex;
   text-align: center;
-  height: 80px;
+  align-items: center;
+  margin: auto;
   width: 196px;
+  height: 70px;
 }
 
 /*-------recherche restaurant------*/

@@ -67,17 +67,17 @@ a {
   margin-right: 20px;
 }
 
-.coeurcheck input[type="checkbox"],
+.coeurcheck input[type=checkbox],
 .coeurcheck .check {
   display: none;
 }
 
-.coeurcheck input[type="checkbox"]:checked ~ .check {
+.coeurcheck input[type=checkbox]:checked ~ .check {
   display: inline-block;
   color: rgba(255, 255, 255, 0);
 }
 
-.coeurcheck input[type="checkbox"]:checked ~ .uncheck {
+.coeurcheck input[type=checkbox]:checked ~ .uncheck {
   display: none;
 }
 
@@ -105,6 +105,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .head-menu {
@@ -133,7 +134,7 @@ a {
   background-color: #99e2d0;
   position: absolute;
   left: 17px;
-  bottom: 961px;
+  bottom: 955px;
 }
 
 .titre-section2::after {
@@ -143,7 +144,7 @@ a {
   background-color: #99e2d0;
   position: absolute;
   left: 17px;
-  bottom: 665px;
+  bottom: 661px;
 }
 
 .titre-section3::after {
@@ -153,7 +154,7 @@ a {
   background-color: #99e2d0;
   position: absolute;
   left: 17px;
-  bottom: 368px;
+  bottom: 367px;
 }
 
 .choix-box {

@@ -42,6 +42,7 @@ $color-tertiaire: #99e2d0;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  box-sizing: border-box;
 }
 @mixin head-menu {
   display: flex;
