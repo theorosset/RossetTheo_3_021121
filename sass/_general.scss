@@ -103,19 +103,19 @@ a {
 .titre-section1::after {
   @include titre-section;
   left: 17px;
-  bottom: 955px;
+  bottom: 962px;
 }
 
 .titre-section2::after {
   @include titre-section;
   left: 17px;
-  bottom: 661px;
+  bottom: 666px;
 }
 
 .titre-section3::after {
   @include titre-section;
   left: 17px;
-  bottom: 367px;
+  bottom: 368px;
 }
 
 .choix-box {
@@ -123,11 +123,16 @@ a {
 }
 
 .titre-plat {
-  @include titre-plat;
+  @include overflowEllipsis;
+  font-size: 16px;
+  margin: 0px;
+  margin-bottom: 5px;
 }
 
 .ingredient {
-  @include ingredient;
+  @include overflowEllipsis;
+  margin: 0px;
+  font-size: 15px;
 }
 
 .prix {
@@ -135,7 +140,11 @@ a {
 }
 
 .titreETingredient {
-  @include titreETingredient;
+  display: flex;
+  flex-direction: column;
+  @include overflowEllipsis;
+  padding: 10px;
+  flex-grow: 1;
 }
 
 .confirmation {

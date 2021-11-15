@@ -1,6 +1,7 @@
 $color-primaire: #9356dc;
 $color-secondaire: #ff79da;
 $color-tertiaire: #99e2d0;
+$color-footer: #353535;
 
 @mixin head {
   display: flex;
@@ -76,42 +77,20 @@ $color-tertiaire: #99e2d0;
   cursor: pointer;
 }
 
-@mixin titre-plat {
-  font-size: 16px;
-  margin: 0px;
-  margin-bottom: 5px;
-  text-overflow: ellipsis;
+@mixin overflowEllipsis {
   overflow: hidden;
   white-space: nowrap;
-}
-
-@mixin ingredient {
-  margin: 0px;
-  font-size: 15px;
-  white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
 }
 
 @mixin prix {
   display: flex;
-
   align-items: flex-end;
   font-size: 15px;
   font-weight: 500;
   margin-right: 20px;
   overflow: hidden;
   flex-shrink: 0;
-}
-
-@mixin titreETingredient {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  overflow: hidden;
-  flex-grow: 1;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 @mixin confirmation {
@@ -176,8 +155,13 @@ $color-tertiaire: #99e2d0;
   font-weight: 500;
 }
 
+@mixin fonctionnement-box {
+  border: 2px solid #fafafa;
+  border-radius: 20px 20px 20px 20px;
+}
+
 @mixin footer {
-  background-color: #353535;
+  background-color: $color-footer;
 }
 
 @mixin footer-lien {

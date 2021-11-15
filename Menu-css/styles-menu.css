@@ -172,20 +172,20 @@ a {
 }
 
 .titre-plat {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   font-size: 16px;
   margin: 0px;
   margin-bottom: 5px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 
 .ingredient {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   margin: 0px;
   font-size: 15px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .prix {
@@ -201,11 +201,11 @@ a {
 .titreETingredient {
   display: flex;
   flex-direction: column;
-  padding: 10px;
   overflow: hidden;
-  flex-grow: 1;
   white-space: nowrap;
   text-overflow: ellipsis;
+  padding: 10px;
+  flex-grow: 1;
 }
 
 .confirmation {

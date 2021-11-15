@@ -45,7 +45,7 @@ a {
 .lettre {
   font-size: 35px;
   margin-left: 5px;
-  background-image: linear-gradient(25deg, #ff79da, #9356dc);
+  background-image: linear-gradient(25deg, $color-secondaire, $color-primaire);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -87,6 +87,7 @@ a {
   @include head-logo;
 }
 /*-------recherche restaurant------*/
+
 .restaurant-local {
   display: flex;
   justify-content: center;
@@ -111,9 +112,6 @@ a {
   top: -2px;
 }
 /*--------exploration des reseration-------*/
-$color-primaire: #9356dc;
-$color-secondaire: #ff79da;
-$color-tertiaire: #99e2d0;
 
 .reservation {
   text-align: center;
@@ -151,10 +149,6 @@ $color-tertiaire: #99e2d0;
   }
 }
 /*--------fonctionnement-------*/
-@mixin fonctionnement-box {
-  border: 2px solid #fafafa;
-  border-radius: 20px 20px 20px 20px;
-}
 
 .fonctionnement {
   display: flex;
@@ -378,7 +372,7 @@ $color-tertiaire: #99e2d0;
 }
 
 .footer {
-  background-color: #353535;
+  background-color: $color-footer;
   &-lien {
     color: white;
     margin-bottom: 8px;
