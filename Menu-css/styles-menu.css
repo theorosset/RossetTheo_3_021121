@@ -262,14 +262,16 @@ a {
   padding-bottom: 13px;
   padding-right: 43px;
   padding-left: 43px;
+  box-shadow: -2px 9px 15px -10px rgba(0, 0, 0, 0.5);
   margin-top: 10px;
   color: white;
   background-image: linear-gradient(175deg, #ff79da, #9356dc);
   cursor: pointer;
 }
 .commander:hover {
-  opacity: 0.4;
-  transition-duration: 0.7s;
+  opacity: 0.7;
+  transition-duration: 0.4s;
+  box-shadow: -2px 9px 15px -10px black;
 }
 
 .bouton-commander {
