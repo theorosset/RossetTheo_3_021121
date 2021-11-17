@@ -74,7 +74,7 @@ a {
 
 .coeurcheck input[type=checkbox]:checked ~ .check {
   display: inline-block;
-  color: rgba(255, 255, 255, 0);
+  color: transparent;
 }
 
 .coeurcheck input[type=checkbox]:checked ~ .uncheck {
@@ -210,10 +210,10 @@ a {
 
 .confirmation {
   display: flex;
+  align-items: center;
   justify-content: center;
   width: 60px;
   margin-right: -64px;
-  align-items: center;
   background-color: #99e2d0;
   border-radius: 0px 12px 12px 0px;
   flex-shrink: 0;
@@ -354,7 +354,7 @@ a {
 }
 
 .apparition10 {
-  animation: delay 9s;
+  animation: delay 10s;
 }
 
 /*----------juste pour note enchante-------*/

@@ -28,8 +28,8 @@ a {
 }
 .loader {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   position: fixed;
   z-index: 9999;
   height: 100%;
@@ -104,8 +104,8 @@ a {
 /*-------recherche restaurant------*/
 .restaurant-local {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   position: relative;
   background-color: #f2f2f2;
   font-size: 18px;

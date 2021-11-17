@@ -2,6 +2,15 @@ $color-primaire: #9356dc;
 $color-secondaire: #ff79da;
 $color-tertiaire: #99e2d0;
 $color-footer: #353535;
+@mixin marginRightLeftAuto {
+  margin-left: auto;
+  margin-right: auto;
+}
+@mixin flexCenterAll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 @mixin head {
   display: flex;
@@ -32,27 +41,10 @@ $color-footer: #353535;
   right: -23px;
 }
 
-@mixin menu {
-  position: relative;
-  border: 2px solid #f2f2f2;
-  margin-top: -50px;
-  padding-top: 15px;
-  background-color: #f2f2f2;
-  border-radius: 34px 34px 0px 0px;
-  max-width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  box-sizing: border-box;
-}
 @mixin head-menu {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-}
-
-@mixin head-menu-titre {
-  padding-left: 19px;
 }
 
 @mixin titre-section {
@@ -63,83 +55,16 @@ $color-footer: #353535;
   position: absolute;
 }
 
-@mixin choix-box {
-  display: flex;
-  background-color: white;
-  margin-left: auto;
-  margin-right: auto;
-  width: 95%;
-  border-radius: 12px;
-  box-shadow: -1px 1px 10px 0px rgba(226, 221, 221, 0.75);
-  overflow: hidden;
-  margin-bottom: 15px;
-  justify-content: space-between;
-  cursor: pointer;
-}
-
 @mixin overflowEllipsis {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-@mixin prix {
-  display: flex;
-  align-items: flex-end;
-  font-size: 15px;
-  font-weight: 500;
-  margin-right: 20px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-
-@mixin confirmation {
-  display: flex;
-  justify-content: center;
-  width: 60px;
-  margin-right: -64px;
-  align-items: center;
-  background-color: $color-tertiaire;
-  border-radius: 0px 12px 12px 0px;
-  flex-shrink: 0;
-  transition-duration: 0.6s;
-}
-
-@mixin logo-confirmation {
-  display: flex;
-  color: $color-tertiaire;
-  background-color: white;
-  border-radius: 100px;
-  width: 20px;
-  height: 20px;
-  transform: rotate(360deg);
-  transition-duration: 0.5s;
-}
-
 @mixin icon-centre {
   margin-left: 3px;
   margin-top: 4px;
   font-size: 13px;
-}
-
-@mixin commander {
-  border-radius: 30px;
-  border: 0px;
-  font-size: 17px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-right: 43px;
-  padding-left: 43px;
-  box-shadow: -2px 9px 15px -10px rgba(0, 0, 0, 0.5);
-  margin-top: 10px;
-  color: white;
-  background-image: linear-gradient(175deg, $color-secondaire, $color-primaire);
-  cursor: pointer;
-  &:hover {
-    opacity: 0.7;
-    transition-duration: 0.4s;
-    box-shadow: -2px 9px 15px -10px rgba(0, 0, 0, 1);
-  }
 }
 
 @mixin bouton-commander {
@@ -164,6 +89,15 @@ $color-footer: #353535;
 
 @mixin footer {
   background-color: $color-footer;
+}
+
+@mixin footer-titre {
+  font-family: "Shrikhand", sans-serif;
+  color: white;
+  margin-bottom: 14px;
+  margin-top: 13px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 @mixin footer-lien {

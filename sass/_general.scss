@@ -59,7 +59,7 @@ a {
 
 .coeurcheck input[type="checkbox"]:checked ~ .check {
   display: inline-block;
-  color: rgb(255, 255, 255, 0);
+  color: transparent;
 }
 
 .coeurcheck input[type="checkbox"]:checked ~ .uncheck {
@@ -80,7 +80,16 @@ a {
 /*-----menu------*/
 
 .menu {
-  @include menu;
+  position: relative;
+  border: 2px solid #f2f2f2;
+  margin-top: -50px;
+  padding-top: 15px;
+  background-color: #f2f2f2;
+  border-radius: 34px 34px 0px 0px;
+  max-width: 1300px;
+  @include marginRightLeftAuto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .head-menu {
@@ -88,7 +97,7 @@ a {
 }
 
 .head-menu-titre {
-  @include head-menu-titre;
+  padding-left: 19px;
 }
 
 /*--------entrée-------*/
@@ -119,7 +128,16 @@ a {
 }
 
 .choix-box {
-  @include choix-box;
+  display: flex;
+  background-color: white;
+  @include marginRightLeftAuto;
+  width: 95%;
+  border-radius: 12px;
+  box-shadow: -1px 1px 10px 0px rgba(226, 221, 221, 0.75);
+  overflow: hidden;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
 .titre-plat {
@@ -136,7 +154,13 @@ a {
 }
 
 .prix {
-  @include prix;
+  display: flex;
+  align-items: flex-end;
+  font-size: 15px;
+  font-weight: 500;
+  margin-right: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
 .titreETingredient {
@@ -148,11 +172,23 @@ a {
 }
 
 .confirmation {
-  @include confirmation;
+  @include flexCenterAll;
+  width: 60px;
+  margin-right: -64px;
+  background-color: $color-tertiaire;
+  border-radius: 0px 12px 12px 0px;
+  flex-shrink: 0;
+  transition-duration: 0.6s;
 }
-
 .logo-confirmation {
-  @include logo-confirmation;
+  display: flex;
+  color: $color-tertiaire;
+  background-color: white;
+  border-radius: 100px;
+  width: 20px;
+  height: 20px;
+  transform: rotate(360deg);
+  transition-duration: 0.5s;
 }
 
 .icon-centre {
@@ -179,7 +215,23 @@ a {
 }
 
 .commander {
-  @include commander;
+  border-radius: 30px;
+  border: 0px;
+  font-size: 17px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 43px;
+  padding-left: 43px;
+  box-shadow: -2px 9px 15px -10px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+  color: white;
+  background-image: linear-gradient(175deg, $color-secondaire, $color-primaire);
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+    transition-duration: 0.4s;
+    box-shadow: -2px 9px 15px -10px rgba(0, 0, 0, 1);
+  }
 }
 
 .bouton-commander {
@@ -189,7 +241,12 @@ a {
 /*------footer---------*/
 
 #footer-titre {
-  @include footer-titre;
+  font-family: "Shrikhand", sans-serif;
+  color: white;
+  margin-bottom: 14px;
+  margin-top: 13px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .footer {
@@ -214,43 +271,11 @@ a {
     opacity: 1;
   }
 }
-.apparition1 {
-  animation: delay 1s;
-}
 
-.apparition2 {
-  animation: delay 2s;
-}
-
-.apparition3 {
-  animation: delay 3s;
-}
-
-.apparition4 {
-  animation: delay 4s;
-}
-
-.apparition5 {
-  animation: delay 5s;
-}
-
-.apparition6 {
-  animation: delay 6s;
-}
-
-.apparition7 {
-  animation: delay 7s;
-}
-
-.apparition8 {
-  animation: delay 8s;
-}
-
-.apparition9 {
-  animation: delay 9s;
-}
-.apparition10 {
-  animation: delay 9s;
+@for $i from 1 through 10 {
+  .apparition#{$i} {
+    animation: delay #{$i}s;
+  }
 }
 
 /*----------juste pour note enchante-------*/

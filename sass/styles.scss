@@ -28,9 +28,7 @@ a {
 }
 
 .loader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenterAll;
   position: fixed;
   z-index: 9999;
   height: 100%;
@@ -89,9 +87,7 @@ a {
 /*-------recherche restaurant------*/
 
 .restaurant-local {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenterAll;
   position: relative;
   background-color: #f2f2f2;
   font-size: 18px;
@@ -364,26 +360,16 @@ a {
 /*-----------footer---------*/
 
 #footer-titre {
-  font-family: "Shrikhand", sans-serif;
-  color: white;
-  margin-bottom: 14px;
-  margin-top: 13px;
-  font-size: 20px;
-  font-weight: 500;
+  @include footer-titre;
 }
 
 .footer {
   background-color: $color-footer;
   &-lien {
-    color: white;
-    margin-bottom: 8px;
+    @include footer-lien;
   }
   &-total {
-    display: flex;
-    flex-direction: column;
-    padding-top: 5px;
-    margin-left: 20px;
-    padding-bottom: 10px;
+    @include footer-total;
   }
 }
 
