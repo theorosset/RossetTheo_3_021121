@@ -307,6 +307,16 @@ a {
   padding-bottom: 10px;
 }
 
+.footer-icon {
+  padding-right: 14px;
+  font-size: 13px;
+}
+
+.footer-icon2 {
+  padding-right: 10px;
+  font-size: 12px;
+}
+
 /*---------animation apparition------*/
 @keyframes delay {
   from {
