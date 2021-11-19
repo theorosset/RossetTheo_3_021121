@@ -90,6 +90,7 @@ a {
   @include marginRightLeftAuto;
   width: 100%;
   box-sizing: border-box;
+  height: 1097.23px;
 }
 
 .head-menu {
@@ -112,19 +113,19 @@ a {
 .titre-section1::after {
   @include titre-section;
   left: 17px;
-  bottom: 962px;
+  top: 129px;
 }
 
 .titre-section2::after {
   @include titre-section;
   left: 17px;
-  bottom: 666px;
+  top: 423px;
 }
 
 .titre-section3::after {
   @include titre-section;
   left: 17px;
-  bottom: 368px;
+  top: 717px;
 }
 
 .choix-box {
@@ -293,22 +294,36 @@ a {
 .titre-section-enchante-1::after {
   @include titre-section;
   left: 17px;
-  bottom: 1039px;
+  bottom: 1041px;
 }
 .titre-section-enchante-2::after {
   @include titre-section;
   left: 17px;
-  bottom: 664px;
+  bottom: 670px;
 }
 .titre-section-enchante-3::after {
   @include titre-section;
   left: 17px;
-  bottom: 367px;
+  bottom: 375px;
 }
 .banniere-note-enchante {
   max-height: 512px;
   width: 100%;
   object-fit: cover;
+}
+
+.menu-enchante {
+  position: relative;
+  border: 2px solid #f2f2f2;
+  margin-top: -50px;
+  padding-top: 15px;
+  background-color: #f2f2f2;
+  border-radius: 34px 34px 0px 0px;
+  max-width: 1300px;
+  @include marginRightLeftAuto;
+  width: 100%;
+  box-sizing: border-box;
+  height: 1174.83px;
 }
 
 /*-------banniere responsive----*/
