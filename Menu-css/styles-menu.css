@@ -2,6 +2,7 @@
 /*--------paramettre grosse partie-----*/
 body {
   margin: 0px;
+  max-height: 1812.5;
   font-family: "Roboto", sans-serif;
 }
 
