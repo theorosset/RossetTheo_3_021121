@@ -2,7 +2,6 @@
 /*--------paramettre grosse partie-----*/
 body {
   margin: 0px;
-  max-height: 1812.5px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -107,7 +106,6 @@ a {
   margin-right: auto;
   width: 100%;
   box-sizing: border-box;
-  height: 1097.23px;
 }
 
 .head-menu {
@@ -122,6 +120,7 @@ a {
 
 /*--------entrée-------*/
 .titre-section {
+  position: relative;
   font-weight: 300;
   font-size: 16px;
   text-transform: uppercase;
@@ -136,27 +135,7 @@ a {
   background-color: #99e2d0;
   position: absolute;
   left: 17px;
-  top: 129px;
-}
-
-.titre-section2::after {
-  content: "";
-  width: 40px;
-  height: 3px;
-  background-color: #99e2d0;
-  position: absolute;
-  left: 17px;
-  top: 423px;
-}
-
-.titre-section3::after {
-  content: "";
-  width: 40px;
-  height: 3px;
-  background-color: #99e2d0;
-  position: absolute;
-  left: 17px;
-  top: 717px;
+  top: 22px;
 }
 
 .choix-box {
@@ -269,6 +248,7 @@ a {
   color: white;
   background-image: linear-gradient(175deg, #ff79da, #9356dc);
   cursor: pointer;
+  transition-duration: 0.5s;
 }
 .commander:hover {
   opacity: 0.7;
@@ -370,55 +350,10 @@ a {
 }
 
 /*----------juste pour note enchante-------*/
-.titre-section-enchante-1::after {
-  content: "";
-  width: 40px;
-  height: 3px;
-  background-color: #99e2d0;
-  position: absolute;
-  left: 17px;
-  bottom: 1041px;
-}
-
-.titre-section-enchante-2::after {
-  content: "";
-  width: 40px;
-  height: 3px;
-  background-color: #99e2d0;
-  position: absolute;
-  left: 17px;
-  bottom: 670px;
-}
-
-.titre-section-enchante-3::after {
-  content: "";
-  width: 40px;
-  height: 3px;
-  background-color: #99e2d0;
-  position: absolute;
-  left: 17px;
-  bottom: 375px;
-}
-
 .banniere-note-enchante {
   max-height: 512px;
   width: 100%;
   object-fit: cover;
-}
-
-.menu-enchante {
-  position: relative;
-  border: 2px solid #f2f2f2;
-  margin-top: -50px;
-  padding-top: 15px;
-  background-color: #f2f2f2;
-  border-radius: 34px 34px 0px 0px;
-  max-width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  box-sizing: border-box;
-  height: 1174.83px;
 }
 
 /*-------banniere responsive----*/

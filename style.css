@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*--------taille page/police-----*/
 body {
   margin: 0px;
@@ -18,12 +17,15 @@ a {
     opacity: 1;
   }
 }
-@keyframes visibilité {
+@keyframes visibilite {
   from {
+    opacity: 1;
     visibility: visible;
   }
   to {
+    opacity: 0;
     visibility: hidden;
+    transform: scale(2);
   }
 }
 .loader {
@@ -34,16 +36,16 @@ a {
   z-index: 9999;
   height: 100%;
   width: 100%;
-  cursor: wait;
   font-family: "Shrikhand", sans-serif;
-  animation: visibilité 2.7s;
-  visibility: hidden;
+  animation: visibilite 2.6s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
   background-color: black;
 }
 
 .lettre {
   font-size: 35px;
-  margin-left: 5px;
+  letter-spacing: 0.2em;
   background-image: linear-gradient(25deg, #ff79da, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
@@ -159,6 +161,7 @@ a {
   color: white;
   background-image: linear-gradient(175deg, #ff79da, #9356dc);
   cursor: pointer;
+  transition-duration: 0.5s;
 }
 .bouton-explorer:hover {
   opacity: 0.7;
@@ -191,6 +194,7 @@ a {
   height: 55px;
   box-shadow: -1px 1px 15px 0px rgba(178, 172, 172, 0.75);
   margin-bottom: 20px;
+  transition-duration: 0.7s;
 }
 
 .fonctionnement-numero {
@@ -210,6 +214,7 @@ a {
   padding-left: 13px;
   color: #646464;
   font-size: 17px;
+  transition-duration: 0.7s;
 }
 
 .fonctionnement-paragraphe {
@@ -226,6 +231,10 @@ a {
 .fonctionnement-onglet:hover .icon-fonctionnement {
   color: #9356dc;
   transition-duration: 0.6s;
+}
+
+.icon-fonctionnement {
+  transition-duration: 0.7s;
 }
 
 .titre-fonctionnement {
@@ -266,6 +275,11 @@ a {
   border-radius: 15px;
   margin-bottom: 30px;
   position: relative;
+  transition-duration: 0.3s;
+}
+.restaurant-box:hover {
+  transition-duration: 0.3s;
+  transform: scale(0.95);
 }
 
 .restaurant-box2 {
@@ -278,6 +292,11 @@ a {
   border-radius: 15px;
   margin-bottom: 30px;
   position: relative;
+  transition-duration: 0.3s;
+}
+.restaurant-box2:hover {
+  transition-duration: 0.3s;
+  transform: scale(0.95);
 }
 
 .restaurant-box-x2 {
