@@ -67,6 +67,14 @@ $color-footer: #353535;
   font-size: 13px;
 }
 
+@mixin button {
+  border-radius: 30px;
+  border: 0px;
+  font-size: 17px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
 @mixin bouton-commander {
   display: flex;
   justify-content: center;

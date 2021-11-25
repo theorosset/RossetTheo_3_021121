@@ -204,11 +204,7 @@ a {
 }
 
 .commander {
-  border-radius: 30px;
-  border: 0px;
-  font-size: 17px;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  @include button;
   padding-right: 43px;
   padding-left: 43px;
   box-shadow: -2px 9px 15px -10px rgba(0, 0, 0, 0.5);
