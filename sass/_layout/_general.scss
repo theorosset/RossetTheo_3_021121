@@ -1,5 +1,6 @@
-@import "_mixin.scss";
-@import "_variable.scss";
+@import "../_util/mixin";
+@import "../_util/variable";
+@import "../_util/Keyframe";
 /*--------paramettre grosse partie-----*/
 body {
   margin: 0px;
@@ -60,6 +61,7 @@ a {
 
 .coeurcheck input[type="checkbox"]:checked ~ .check {
   display: inline-block;
+  animation: loader 1.5s;
   color: transparent;
 }
 

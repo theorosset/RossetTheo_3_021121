@@ -1,6 +1,6 @@
-@import "_mixin.scss";
-@import "_variable.scss";
-@import "_Keyframe.scss";
+@import "../_util/mixin";
+@import "../_util/variable";
+@import "../_util/Keyframe";
 /*--------taille page/police-----*/
 body {
   margin: 0px;
@@ -301,10 +301,6 @@ a {
   -webkit-background-clip: text;
 }
 
-.uncheck:hover {
-  transition-duration: 0.6s;
-  transform: scale(1.2);
-}
 /*----fin coeur restaurant-----*/
 
 .titre-restaurant {
