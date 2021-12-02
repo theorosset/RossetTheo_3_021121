@@ -150,8 +150,10 @@ a {
 .fonctionnement {
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
-  margin-right: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1450px;
+  margin: auto;
   &-total {
     display: flex;
     flex-direction: column;
@@ -302,6 +304,7 @@ a {
 
 .coeurcheck input[type="checkbox"]:checked ~ .check {
   display: inline-block;
+
   color: rgb(255, 255, 255, 0);
 }
 
@@ -312,6 +315,7 @@ a {
 .fas {
   background: linear-gradient(to bottom, $color-primaire, $color-secondaire);
   background-clip: text;
+
   -webkit-background-clip: text;
 }
 
