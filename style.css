@@ -1,3 +1,31 @@
+@keyframes loader {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes visibilite {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(2);
+  }
+}
+@keyframes delay {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /*--------taille page/police-----*/
 body {
   margin: 0px;
@@ -347,6 +375,7 @@ a {
 
 .coeurcheck input[type=checkbox]:checked ~ .check {
   display: inline-block;
+  animation: loader 1.5s;
   color: rgba(255, 255, 255, 0);
 }
 

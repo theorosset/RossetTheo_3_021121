@@ -300,15 +300,6 @@ a {
 }
 
 /*---------animation apparition------*/
-@keyframes delay {
-  from {
-    transform: translateY(10px);
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .apparition1 {
   animation: delay 1s;
 }

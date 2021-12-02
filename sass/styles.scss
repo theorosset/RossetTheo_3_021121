@@ -1,4 +1,5 @@
 @import "_var-mix.scss";
+@import "_Keyframe.scss";
 /*--------taille page/police-----*/
 body {
   margin: 0px;
@@ -290,6 +291,7 @@ a {
 }
 
 /*-------coeur restaurant--------*/
+
 .coeurcheck {
   margin-top: -36px;
   font-size: 22px;
@@ -304,7 +306,7 @@ a {
 
 .coeurcheck input[type="checkbox"]:checked ~ .check {
   display: inline-block;
-
+  animation: loader 1.5s;
   color: rgb(255, 255, 255, 0);
 }
 
@@ -315,7 +317,6 @@ a {
 .fas {
   background: linear-gradient(to bottom, $color-primaire, $color-secondaire);
   background-clip: text;
-
   -webkit-background-clip: text;
 }
 
