@@ -1,59 +1,3 @@
-@keyframes loader {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes visibilite {
-  from {
-    opacity: 1;
-    visibility: visible;
-  }
-  to {
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(2);
-  }
-}
-@keyframes delay {
-  from {
-    transform: translateY(10px);
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes loader {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes visibilite {
-  from {
-    opacity: 1;
-    visibility: visible;
-  }
-  to {
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(2);
-  }
-}
-@keyframes delay {
-  from {
-    transform: translateY(10px);
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 /*--------taille page/police-----*/
 body {
   margin: 0px;
@@ -64,6 +8,35 @@ a {
   text-decoration: none;
 }
 
+/*--------keyframe------*/
+@keyframes loader {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes visibilite {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(2);
+  }
+}
+@keyframes delay {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /*-----loader-----*/
 .loader {
   display: flex;
@@ -377,18 +350,18 @@ a {
   margin-left: auto;
 }
 
-.coeurcheck input[type="checkbox"],
+.coeurcheck input[type=checkbox],
 .coeurcheck .check {
   display: none;
 }
 
-.coeurcheck input[type="checkbox"]:checked ~ .check {
+.coeurcheck input[type=checkbox]:checked ~ .check {
   display: inline-block;
   animation: loader 1.5s;
   color: rgba(255, 255, 255, 0);
 }
 
-.coeurcheck input[type="checkbox"]:checked ~ .uncheck {
+.coeurcheck input[type=checkbox]:checked ~ .uncheck {
   display: none;
 }
 

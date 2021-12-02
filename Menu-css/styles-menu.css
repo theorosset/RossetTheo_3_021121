@@ -1,32 +1,15 @@
 @charset "UTF-8";
-@keyframes loader {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+/*--------taille page/police-----*/
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
 }
-@keyframes visibilite {
-  from {
-    opacity: 1;
-    visibility: visible;
-  }
-  to {
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(2);
-  }
+
+a {
+  text-decoration: none;
 }
-@keyframes delay {
-  from {
-    transform: translateY(10px);
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+
+/*--------keyframe------*/
 @keyframes loader {
   from {
     opacity: 0;
@@ -56,11 +39,6 @@
   }
 }
 /*--------paramettre grosse partie-----*/
-body {
-  margin: 0px;
-  font-family: "Roboto", sans-serif;
-}
-
 h2 {
   font-family: "Shrikhand", sans-serif;
 }
@@ -123,18 +101,18 @@ a {
   margin-right: 20px;
 }
 
-.coeurcheck input[type="checkbox"],
+.coeurcheck input[type=checkbox],
 .coeurcheck .check {
   display: none;
 }
 
-.coeurcheck input[type="checkbox"]:checked ~ .check {
+.coeurcheck input[type=checkbox]:checked ~ .check {
   display: inline-block;
   animation: loader 1.5s;
   color: transparent;
 }
 
-.coeurcheck input[type="checkbox"]:checked ~ .uncheck {
+.coeurcheck input[type=checkbox]:checked ~ .uncheck {
   display: none;
 }
 
@@ -142,6 +120,11 @@ a {
   background: linear-gradient(to bottom, #9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+.uncheck:hover {
+  transition-duration: 0.6s;
+  transform: scale(1.2);
 }
 
 /*----fin coeur restaurant-----*/
