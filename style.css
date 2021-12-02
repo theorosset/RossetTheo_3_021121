@@ -37,25 +37,6 @@ a {
 }
 
 /*-----loader-----*/
-@keyframes loader {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes visibilite {
-  from {
-    opacity: 1;
-    visibility: visible;
-  }
-  to {
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(2);
-  }
-}
 .loader {
   display: flex;
   align-items: center;
